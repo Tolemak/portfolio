@@ -1,6 +1,5 @@
 import Assets from './assets';
 import type { Skill, SkillCategory } from '../types';
-import svelte from '../md/svelte.md?raw';
 import { omit, type StringWithAutoComplete } from '@riadh-adrani/utils';
 
 const defineSkillCategory = <S extends string>(data: SkillCategory<S>): SkillCategory<S> => data;
@@ -112,10 +111,39 @@ export const items = [
 		category: 'pro-lang'
 	}),
 	defineSkill({
+		slug: 'sql',
+		color: 'blue',
+		description: `<p>1. SQL Virtuoso Across Platforms:
+		   Proficient in SQL Anywhere, MySQL, and PostgreSQL, I adeptly navigate diverse database environments to deliver optimized solutions tailored to specific needs. From performance tuning to schema design, I leverage my expertise across platforms to ensure efficient data management and retrieval.
+		   </p>
+		   <br>
+		   <p>
+		2. Advanced Query Architect:<br>
+		   With a knack for crafting intricate queries, I specialize in creating advanced SQL functions and queries that extract valuable insights from complex datasets. Whether it's aggregating data, performing joins, or implementing window functions, I employ SQL's powerful features to derive meaningful results efficiently.
+		   </p>
+		   <br>
+		   <p>
+		3. Schema Management Maestro:<br>
+		   As a skilled database administrator, I excel in managing database schemas across SQL Anywhere, MySQL, and PostgreSQL environments. From designing schema structures to optimizing indexes and constraints, I ensure data integrity and scalability while adhering to best practices for efficient database management.
+		   </p>
+		   <br>
+		   <p>
+		4. Performance Optimization Guru:<br>
+		   With a focus on performance optimization, I fine-tune SQL queries and database configurations to maximize efficiency and responsiveness. Leveraging my deep understanding of SQL execution plans and indexing strategies, I optimize query performance across different database platforms to deliver optimal user experiences and minimize resource consumption.
+		   </p>
+		   <br>
+		   <p>
+		5. Cross-Platform Database Architect:<br>
+		   Specializing in database architecture across SQL Anywhere, MySQL, and PostgreSQL, I design robust schemas and data models that meet diverse business requirements. From conceptualization to implementation, I leverage my expertise to create scalable and maintainable database solutions that drive business growth and innovation.</p>`,
+		logo: Assets.SAP,
+		name: 'SQL',
+		category: 'db'
+	}),
+	defineSkill({
 		slug: 'html',
 		color: 'orange',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			`Proficient in HTML, I specialize in creating web pages tailored to meet diverse user needs and preferences. With a focus on user requirements, I excel in translating ideas into HTML structures that accurately represent desired designs and functionalities. Whether it's crafting custom layouts, implementing interactive elements, or optimizing for accessibility, I leverage HTML's versatility to deliver web solutions that align with user expectations.`,
 		logo: Assets.HTML,
 		name: 'HTML',
 		category: 'markup-style'
@@ -124,36 +152,45 @@ export const items = [
 		slug: 'css',
 		color: 'blue',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			`Proficient in CSS, I specialize in crafting custom styles tailored to diverse user requirements. With attention to detail, I excel in customizing CSS to match specific user preferences and brand aesthetics. Skilled in creating responsive designs that adapt seamlessly to various screen sizes and devices, I prioritize usability and accessibility, creating intuitive and inclusive CSS styles for enhanced user experience. Specializing in dynamic user interfaces, I leverage CSS animations and interactions to create engaging web experiences.`,
 		logo: Assets.CSS,
 		name: 'CSS',
 		category: 'markup-style'
 	}),
 	defineSkill({
-		slug: 'sass',
-		color: 'pink',
+		slug: 'symfony',
+		color: 'white',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.Sass,
-		name: 'Sass',
-		category: 'markup-style'
+			`Skilled in PHP Symfony, I specialize in utilizing this versatile framework to develop web applications customized to various user needs. With a sharp focus on routing strategies, I excel in designing webpage pathways that ensure seamless navigation and functionality. Whether it involves crafting unique controllers, managing route parameters, or optimizing for top performance, I leverage Symfony's extensive capabilities to deliver web solutions that perfectly align with user expectations. My expertise lies in seamlessly blending Symfony's robust features with innovative problem-solving to deliver sophisticated and user-centric web experiences.`,
+		logo: Assets.Symfony,
+		name: 'Symfony',
+		category: 'framework'
 	}),
 	defineSkill({
 		slug: 'bootstrap',
 		color: 'violet',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			`Skilled in Bootstrap, I specialize in harnessing this robust front-end framework to craft compelling user experiences. With a sharp focus on design coherence and adaptability, I excel in creating visually striking and intuitive interfaces. Whether it entails constructing responsive layouts, styling elements, or integrating interactive features, I leverage Bootstrap's rich array of pre-designed components and CSS utilities to expedite development and guarantee seamless cross-browser performance. My expertise lies in seamlessly amalgamating Bootstrap's versatile grid system and elements to deliver contemporary and immersive web experiences that captivate users.`,
 		logo: Assets.Bootstrap,
 		name: 'Bootstrap',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'twig',
+		color: 'green',
+		description:
+			`Skilled in Twig, I excel not only in crafting HTML content but also in formatting data and creating macros to enhance template functionality. With Twig's robust capabilities, I specialize in transforming and presenting data in a visually appealing and structured manner within HTML templates. Whether it involves formatting dates, numbers, or text strings, I leverage Twig's built-in filters and functions to ensure consistency and readability across various data types. Additionally, I am proficient in creating macros to encapsulate reusable logic and functionality within templates, promoting code reusability and maintainability. By harnessing Twig's powerful features for data formatting and macro creation, I am able to streamline template development and create dynamic and feature-rich web interfaces that meet the evolving needs of web projects.`,
+		logo: Assets.Twig,
+		name: 'Twig',
 		category: 'library'
 	}),
 	defineSkill({
-		slug: 'svelte',
-		color: 'orange',
-		description: svelte,
-		logo: Assets.Svelte,
-		name: 'Svelte',
-		category: 'library'
+		slug: 'vscode',
+		color: 'blue',
+		description:`<p>Visual Studio Code (VS Code) stands as my favored and primary development tool, seamlessly integrating into my workflow to enhance productivity and streamline coding tasks. With an array of customizable features and an extensive library of plugins, I have tailored VS Code to suit my specific requirements, optimizing it for efficient and personalized development experiences.</p><br><p>I rely on VS Code's intuitive interface and versatile functionality to tackle a wide range of coding tasks with ease. From writing and debugging code to managing projects and collaborating with teammates, VS Code serves as my go-to platform for all my development needs.</p><br><p>What sets VS Code apart for me is its vast ecosystem of plugins and extensions, which I leverage extensively to tailor the editor to my preferences. Whether it's integrating linters and code formatters to maintain code quality, or adding themes and color schemes for a personalized aesthetic, I have fine-tuned VS Code to align perfectly with my workflow and coding style.</p><br><p>Moreover, VS Code's robust support for various programming languages and frameworks ensures that I can work seamlessly across different projects and technologies without sacrificing efficiency or consistency. Whether I'm working on web development, data science, or cloud computing, VS Code provides the necessary tools and integrations to tackle any coding challenge effectively.</p><br><p>Overall, Visual Studio Code stands as my indispensable companion in the world of software development, empowering me to write clean, maintainable code and build innovative solutions with speed and precision. Its flexibility, extensibility, and intuitive interface make it an essential tool in my arsenal, enabling me to unleash my creativity and productivity to the fullest extent.</p>`,
+		logo: Assets.VSCode,
+		name: 'Visual Studio Code',
+		category: 'devtools'
 	})
 ] as const;
 

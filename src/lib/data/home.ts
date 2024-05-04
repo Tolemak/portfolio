@@ -25,4 +25,10 @@ export const links: Array<{ platform: Platform; link: string }> = [
 	}
 ];
 
-export const skills = getSkills('js', 'php', 'python', 'css', 'html');
+export const skills = getSkills(
+	'js',
+	'python',
+	'symfony',
+	'bootstrap',
+	'twig'
+);

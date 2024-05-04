@@ -71,7 +71,11 @@ const Assets = {
 	Unocss: a('unocss.svg'),
 	Ruvy: a('ruvy.svg'),
 	Postcss: a('postcss.svg'),
-	PHP: a("php.svg")
+	PHP: a("php.svg"),
+	SAP: a("sap.svg"),
+	Symfony: a("symfony.svg"),
+	Twig: a("twig.svg"),
+	VSCode: a("vscode.svg")
 };
 
 export default Assets;
