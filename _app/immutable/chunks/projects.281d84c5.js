@@ -1,1 +1,0 @@
-import{A as o}from"./UIcon.27c3de32.js";import{g as s}from"./skills.a74e4268.js";const n=[{slug:"soon",color:"#5e95e3",description:"soon",shortDescription:"soon",links:[{to:"",label:"GitHub"}],logo:o.Unknown,name:"Soon",period:{from:new Date},skills:s(),type:"Soon"}],i="Projects";export{n as i,i as t};
