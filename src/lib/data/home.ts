@@ -8,33 +8,20 @@ export const name = 'Kamil';
 export const lastName = 'Gałkowski';
 
 export const description =
-	'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!';
+	"I'm a Fullstack Developer with a passion for building robust web applications and integrating APIs. With expertise in PHP, Symfony, JavaScript, Bootstrap, Python, and SQL, I enjoy bringing creative solutions to complex problems and delivering high-quality software solutions.";
 
 export const links: Array<{ platform: Platform; link: string }> = [
-	{ platform: Platform.GitHub, link: 'https://github.com/' },
+	{
+		platform: Platform.GitHub,
+		link: 'https://github.com/Tolemak'
+	},
 	{
 		platform: Platform.Linkedin,
-		link: 'https://www.linkedin.com/'
-	},
-	{
-		platform: Platform.Twitter,
-		link: 'https://twitter.com/'
-	},
-	{
-		platform: Platform.StackOverflow,
-		link: 'https://stackoverflow.com/'
+		link: 'https://www.linkedin.com/in/kamil-ga%C5%82kowski-544a781aa/'
 	},
 	{
 		platform: Platform.Email,
-		link: 'riadh_adrani@hotmail.fr'
-	},
-	{
-		platform: Platform.Youtube,
-		link: 'https://www.youtube.com'
-	},
-	{
-		platform: Platform.Facebook,
-		link: 'https://www.facebook.com'
+		link: 'tolemak.pancreas694@slmail.me'
 	}
 ];
 
