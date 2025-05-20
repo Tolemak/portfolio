@@ -4,20 +4,23 @@ import type { Project } from '../types';
 
 export const items: Array<Project> = [
 	{
-		slug: 'soon',
-		color: '#5e95e3',
+		slug: 'file-actions',
+		color: '#4caf50',
 		description:
-			'soon',
+			'FileActions_BackendDemo is a demonstration project showcasing a full-stack application with a primary focus on backend development using PHP and the Symfony framework. It highlights best practices, clean architecture, and integration with modern tools and technologies.',
 		shortDescription:
-			'soon',
-		links: [{ to: '', label: 'GitHub' }],
-		logo: Assets.Unknown,
-		name: 'Soon',
+			'Batch file operations in your browser. Resive, convert, compress, and maybe more.',
+		links: [
+			{ to: 'http://file-actions.tolemak.pl/', label: 'Live Demo' },
+			{ to: 'https://github.com/Tolemak/FileActions_BackendDemo', label: 'GitHub' }
+		],
+		logo: Assets.Symfony,
+		name: 'File Actions',
 		period: {
-			from: new Date()
+			from: new Date('2024-04-01')
 		},
-		skills: getSkills(),
-		type: 'Soon'
+		skills: getSkills('php','symfony','bootstrap','js', 'ts', 'html', 'css'),
+		type: 'Web Application'
 	},
 	// {
 	// 	slug: 'slick-portfolio-svelte',
