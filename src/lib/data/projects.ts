@@ -17,7 +17,7 @@ export const items: Array<Project> = [
 		logo: Assets.Symfony,
 		name: 'File Actions',
 		period: {
-			from: new Date('2024-04-01')
+			from: new Date('2025-04-01')
 		},
 		skills: getSkills('php','symfony','bootstrap','js', 'ts', 'html', 'css'),
 		type: 'Web Application'
