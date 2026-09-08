@@ -26,3 +26,15 @@ jobs:
         with:
           folder: build # The folder the action should deploy.
           branch: gh-pages
+
+      - name: Deploy to Mikrus
+        env:
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          echo "$DEPLOY_SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          # Pinned host key (verified 2026-09-08 directly against /etc/ssh/ssh_host_ed25519_key.pub on the server).
+          echo '[konrad192.mikrus.xyz]:10192 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKISUA7JlS13WF3PQaRdtugdoIwiQWt7QrMuLEJ3wQxy' > ~/.ssh/known_hosts
+          ssh -i ~/.ssh/deploy_key -p 10192 root@konrad192.mikrus.xyz "old-portfolio"
