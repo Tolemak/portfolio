@@ -1,0 +1,7 @@
+# Blokuj dostęp do katalogu .git i plików wrażliwych
+RedirectMatch 403 \.git
+RedirectMatch 403 \.env
+RedirectMatch 403 \.htaccess
+
+# Wyłącz listowanie katalogów
+Options -Indexes
